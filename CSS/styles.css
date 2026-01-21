@@ -543,6 +543,11 @@ footer{
     }
 
 
+    .banner{
+        padding-top: 82px;
+        padding-bottom: 33px;
+    }
+
     .banner-content{
         max-width: 343px;
     }
