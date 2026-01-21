@@ -55,7 +55,19 @@ body {
   border: none;
   letter-spacing: 1px;
   cursor: pointer;
+  transition: box-shadow 0.4s ease, transform 0.3s ease;
 }
+
+.btn-primary:hover{
+  box-shadow:
+    0 0 10px rgba(249, 240, 71, 0.6),
+    0 0 20px rgba(242, 54, 140, 0.5),
+    0 0 35px rgba(138, 43, 226, 0.5);
+  transform: translateY(-2px);
+}
+
+
+
 
  .sections-title{
     font-size: 3rem;
@@ -154,7 +166,24 @@ header{
     margin: 0 auto;
     /* border: 2px solid white; */
     box-shadow:  0 0 111px -43px rgba(255, 255, 255, 0.9);
+    transition: transform 0.6s ease;
+    cursor: pointer;
 }
+
+/* gpt */
+.circle img{
+    transition: transform 0.8s ease;
+}
+.banner-img:hover .circle img{
+    transform: scale(1.2) rotate(8deg);
+}
+
+
+
+
+
+
+
 
 .circle{
     justify-content: center;
@@ -162,6 +191,7 @@ header{
     /* border: 2px solid white; */
     height: 100%;
     position: relative;
+    transition: transform 0.8s ease;
     
 }
 
@@ -229,7 +259,17 @@ header{
     border: 2px solid #00ff88;
     border-radius: 25px;
     letter-spacing: 1px;
+    transition: box-shadow 0.4s ease, transform 0.3s ease;
+    cursor: pointer;
  }
+
+ .message:hover{
+  box-shadow:
+    0 0 10px rgba(249, 240, 71, 0.6),
+    0 0 20px rgba(242, 54, 140, 0.5),
+    0 0 35px rgba(138, 43, 226, 0.5);
+  transform: translateY(-2px);
+}
 
 
  /* about section */
@@ -316,6 +356,16 @@ header{
     padding: 40px;
     background-color: rgb(31 5 64);
     border-radius: 40px;
+    transition: box-shadow 0.4s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.premium:hover, .mobile:hover, .global:hover, .exclusive:hover, .rich:hover{
+  box-shadow:
+    0 0 10px rgba(249, 240, 71, 0.6),
+    0 0 20px rgba(242, 54, 140, 0.5),
+    0 0 35px rgba(138, 43, 226, 0.5);
+  transform: translateY(-2px);
 }
 
 
@@ -354,7 +404,19 @@ header{
     /* border: 2px solid red; */
     border-radius: 25px;
     background-color: rgb(31 5 64);
+    cursor: pointer;
+    transition: box-shadow 0.4s ease, transform 0.3s ease;
+
 }
+
+.feature-card:hover{
+  box-shadow:
+    0 0 10px rgba(249, 240, 71, 0.6),
+    0 0 20px rgba(242, 54, 140, 0.5),
+    0 0 35px rgba(138, 43, 226, 0.5);
+  transform: translateY(-2px);
+}
+
 .feature-card iframe{
     border-radius: 25px 25px 0px 0px;
  }
@@ -388,7 +450,19 @@ header{
     padding: 48px 40px;
     margin-top: 40px;
     margin-bottom: 120px;
+    cursor: pointer;
+    transition: box-shadow 0.4s ease, transform 0.3s ease;
 }
+
+.host-container:hover{
+  box-shadow:
+    0 0 10px rgba(249, 240, 71, 0.6),
+    0 0 20px rgba(242, 54, 140, 0.5),
+    0 0 35px rgba(138, 43, 226, 0.5);
+  transform: translateY(-2px);
+}
+
+
 .host-icons{
     display: flex;
     gap: 8px;
