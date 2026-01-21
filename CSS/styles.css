@@ -1,0 +1,155 @@
+/* shared style */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.text-primary {
+  color: #ffffff;
+}
+
+.text-green {
+  color: #00ff88;
+}
+.text-grey {
+  color: #424242;
+}
+
+.bg-color {
+  background-color: #1a0b2e;
+}
+
+body {
+  background-color: #1a0b2e;
+}
+
+.btn-primary {
+  background: linear-gradient(
+    105deg,
+    #f9f047 0%,
+    #0fd850 0%,
+    #f9f047 0%,
+    #f2368c 50%,
+    #8a2be2 100%
+  );
+  font-size: 16px;
+  font-weight: 500;
+  padding: 13px 16px;
+  border-radius: 10000px;
+  border: none;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+/* header */
+header{
+    border-bottom: 1px solid rgb(41, 41, 41);
+}
+
+.nav-bar {
+  max-width: 1200px;
+  margin: 24px auto;
+  
+}
+.nav-bar {
+  justify-content: space-between;
+  align-items: center; 
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.brand span {
+  background: linear-gradient(to right, #fb8c65 0%, #ff2995 50%, #a426fd 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.nav-links li {
+  list-style-type: none;
+  margin-right: 32px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.fa-solid {
+  margin-left: 4px;
+}
+.hamburger{
+    display: none;
+}
+
+
+
+
+
+
+/* banner */
+.banner{
+    border: 1px solid white;
+}
+
+.banner-img{
+    border: 2px solid white;
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    background-image: url(../assets/hero-circle.png);
+    border: none;
+    margin: 0 auto;
+}
+
+.circle{
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+/* responsive for small device */
+
+@media screen and (max-width: 576px) {
+    .nav-bar{
+        max-width: 440px;
+        margin: 24px auto;
+    }
+    .nav-links{
+        display: none;
+    }
+    .btn-primary{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+}
