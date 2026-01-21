@@ -49,7 +49,7 @@ body {
     #8a2be2 100%
   );
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 500;
   padding: 13px 16px;
   border-radius: 25px;
   border: none;
@@ -223,7 +223,7 @@ header{
     gap: 8px;
     border: 2px solid red;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
     padding: 13px 20px;
     background-color: transparent;
     border: 2px solid #00ff88;
@@ -409,11 +409,35 @@ header{
 
 
 /* footer */
-.footer-icon{
+footer{
+    background-color: rgb(31 5 64);
+    background-image: url(../assets/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center
+}
+.footer-content{
+    max-width: 605px;
+    /* border: 2px solid white; */
+    margin: 0 auto;
+    text-align: center;
+    padding: 100px 0px 100px 0px;
+}
+.footer-icons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 4px;
+    padding: 32px 0px 16px 0px;
+}
+
+.f-icon{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
+
+
 
 
 
@@ -423,7 +447,7 @@ header{
 
 @media screen and (max-width: 576px) {
     .nav-bar{
-        max-width: 440px;
+        max-width: 343px;
         margin: 0px auto;
     }
     .nav-links{
@@ -446,7 +470,7 @@ header{
 
 
     .banner-content{
-        max-width: 450px;
+        max-width: 343px;
     }
     .banner-content h2{
         font-size: 2.5rem;
@@ -495,7 +519,7 @@ header{
     .premium, .mobile, .global, .exclusive, .rich{
         padding: 24px;
         margin: 0 auto;
-        max-width: 445px;
+        max-width: 343px;
     }
 
     .premium img{
@@ -522,9 +546,19 @@ header{
         text-align: center;
         padding: 24px 20px;
         grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 40px;
     }
     .host-icons{
         margin: 0 auto;
+    }
+    .footer-content{
+        width: 307px;
+        padding: 40px 0px 40px 0px;
+    }
+
+    .footer-icons{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
     }
 
 }
