@@ -30,9 +30,10 @@
 
 }
 
-.bg-color {
+/* .bg-color {
   background-color: #1A0B2E;
-}
+  background-color: rgb(26, 15, 57);
+} */
 
 body {
   background-color: #1A0B2E;
@@ -56,6 +57,16 @@ body {
   cursor: pointer;
 }
 
+ .sections-title{
+    font-size: 3rem;
+ }
+
+ .sections-para{
+    font-size: 1rem;
+    padding-top: 16px;
+ }
+
+
 
 
 
@@ -68,7 +79,8 @@ header{
 
 .nav-bar {
   max-width: 1200px;
-  margin: 24px auto;
+  margin: 0 auto;
+  padding: 24px 0px 24px 0px;
   
 }
 .nav-bar {
@@ -115,11 +127,12 @@ header{
 
 /* banner */
 .banner{
-    border: 1px solid white;
+    /* border: 1px solid white; */
     background-image: url(../assets/hero-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-position: 0px -92px;
     /* background-position: 50% 50%; */
 
@@ -141,7 +154,7 @@ header{
 .circle{
     justify-content: center;
     align-items: center;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     height: 100%;
     position: relative;
     
@@ -170,7 +183,7 @@ header{
 .banner-content{
     max-width: 600px;
     margin: 0 auto;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     text-align: center;
     margin-top: 40px;
 }
@@ -214,7 +227,61 @@ header{
  }
 
 
+ /* about section */
 
+ .about{
+    max-width: 1200px;
+    /* border: 2px solid rgb(211, 35, 35); */
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 120px;
+    background-color: #1A0B2E;
+ }
+ .about-content{
+    text-align: center;
+    padding-bottom: 80px;
+    border-bottom: 1px solid rgb(41, 41, 41);
+
+    
+ }
+
+.about-card-container{
+    /* border: 2px solid white; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+    margin-top: 80px;
+ }
+
+ .about-card{
+    /* border: 2px solid rgb(60, 250, 30); */
+    text-align: center;
+ }
+
+ .about-card span:nth-child(1){
+    font-size: 2.7rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid white; */
+    
+ }
+ .about-card span:nth-child(3){
+    text-transform: uppercase;
+    
+ }
+
+ .about-card .fa-star{
+    font-size: 27px;
+    
+ }
+
+
+
+
+
+ 
 
 
 
@@ -226,7 +293,7 @@ header{
 @media screen and (max-width: 576px) {
     .nav-bar{
         max-width: 440px;
-        margin: 24px auto;
+        margin: 0px auto;
     }
     .nav-links{
         display: none;
@@ -251,7 +318,7 @@ header{
         background-image: url(../assets/hero-bg.png);
         background-repeat: no-repeat;
         background-size: cover;
-        margin-top: 100px;
+        margin-top: 0px;
         background-position: 0px -92px;
         /* background-position: 50% 50%; */
 
@@ -267,5 +334,24 @@ header{
     .circle .badge{
         top: 1.75px;
         right: -14px;
+    }
+
+
+    .about{
+        padding: 40px 20px;
+    }
+
+    .about-card-container{
+        /* border: 2px solid white; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        margin-top: 40px;
+    }
+    .about-content{
+        padding-bottom: 40px;
+    }
+    .about-content .sections-title{
+        font-size: 2rem;
     }
 }
