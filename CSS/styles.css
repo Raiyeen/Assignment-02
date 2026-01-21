@@ -623,7 +623,7 @@ footer{
         margin-bottom: 40px;
     }
     .host-icons{
-        margin: 0 auto;
+        justify-content: center;
     }
     .footer-content{
         width: 307px;
